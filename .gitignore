@@ -2,4 +2,4 @@ __pycache__
 .vscode
 data
 models
-solution.ipynb
+02-random_forest_solution.ipynb
