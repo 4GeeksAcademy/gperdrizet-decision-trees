@@ -1,4 +1,6 @@
 __pycache__
 .vscode
-data
+data/raw
+data/interim
+data/processed
 models
