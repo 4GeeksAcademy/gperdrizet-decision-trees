@@ -4,12 +4,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.model_selection import GridSearchCV
 
-def plot_cross_validation(search_results:GridSearchCV) -> None:
+def plot_cross_validation(results:GridSearchCV) -> None:
     '''Takes result object from scikit-learn's GridSearchCV(),
     draws plot of hyperparameter set validation score rank vs
     training and validation scores.'''
 
-    results=pd.DataFrame(search_results.cv_results_)
+    results=pd.DataFrame(results.cv_results_)
     sorted_results=results.sort_values('rank_test_score')
 
     plt.title('Hyperparameter optimization')
