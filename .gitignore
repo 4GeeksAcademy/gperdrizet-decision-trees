@@ -1,5 +1,6 @@
 __pycache__
 .vscode
-data
+data/raw
+data/interim
+data/processed
 models
-02-random_forest_solution.ipynb
