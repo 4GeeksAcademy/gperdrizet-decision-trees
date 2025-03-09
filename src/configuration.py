@@ -1,6 +1,7 @@
 '''Globals for notebooks and modules.'''
 
 # Data
+RAW_DATA_FILE='../data/raw/dataset.parquet'
 DATA_FILE='../data/processed/dataset.pkl'
 
 # Model hyperparameters
