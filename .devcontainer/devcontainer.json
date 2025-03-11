@@ -16,9 +16,11 @@
 	  }
 	},
 
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "mkdir data && mkdir data/raw && mkdir data/interim && mkdir data/processed && mkdir models"
+	// Create data directories not tracked by git
+	"postCreateCommand": [
+		"mkdir -p data/raw",
+		"mkdir -p data/interim",
+		"mkdir -p data/processed",
+		"mkdir -p models"
+	]
 }
