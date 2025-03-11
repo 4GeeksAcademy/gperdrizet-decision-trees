@@ -3,7 +3,11 @@
 {
 	"name": "diabetes-prediction",
 	"image": "mcr.microsoft.com/devcontainers/python:0-3.11",
-	"onCreateCommand": "pip3 install --upgrade pip && pip3 install --user -r requirements.txt",
+
+	// Install Python requierments
+	"onCreateCommand": "pip3 install --user --upgrade pip && pip3 install --user -r requirements.txt",
+
+	// Set-up VSCode
 	"customizations": {
 	  "vscode": {
 		"settings": {"jupyter.kernels.excludePythonEnvironments": ["/usr/bin/python3"]},
@@ -17,10 +21,5 @@
 	},
 
 	// Create data directories not tracked by git
-	"postCreateCommand": [
-		"mkdir -p data/raw",
-		"mkdir -p data/interim",
-		"mkdir -p data/processed",
-		"mkdir -p models"
-	]
+	"postCreateCommand": "mkdir -p data/raw && mkdir -p data/interim && mkdir -p data/processed && mkdir -p models"
 }
