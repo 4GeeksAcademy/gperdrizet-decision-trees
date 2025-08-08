@@ -1,6 +1,6 @@
 __pycache__
+.ipynb_checkpoints
 .vscode
-data/raw
-data/interim
-data/processed
+.venv
+data
 models
