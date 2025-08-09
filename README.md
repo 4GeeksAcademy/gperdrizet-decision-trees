@@ -1,6 +1,6 @@
 # Decision Trees for Diabetes Prediction
 
-[![Codespaces Prebuilds](https://github.com/4GeeksAcademy/15-decision-trees/actions/workflows/codespaces/create_codespaces_prebuilds/badge.svg)](https://github.com/4GeeksAcademy/15-decision-trees/actions/workflows/codespaces/create_codespaces_prebuilds)
+[![Codespaces Prebuilds](https://github.com/4GeeksAcademy/gperdrizet-decision-trees/actions/workflows/codespaces/create_codespaces_prebuilds/badge.svg)](https://github.com/4GeeksAcademy/gperdrizet-decision-trees/actions/workflows/codespaces/create_codespaces_prebuilds)
 
 A comprehensive machine learning project focused on diabetes prediction using decision trees and ensemble methods. This project demonstrates advanced machine learning techniques including decision trees, random forests, gradient boosting, and decision threshold tuning through practical exercises with medical data.
 
