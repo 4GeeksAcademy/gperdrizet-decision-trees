@@ -13,3 +13,6 @@ GRADIENT_BOOSTING_HYPERPARAMETERS='../data/gradient_boosting_hyperparameters.pkl
 DECISION_TREE_MODEL='../models/decision_tree.pkl'
 RANDOM_FOREST_MODEL='../models/random_forest.pkl'
 GRADIENT_BOOSTING_MODEL='../models/gradient_boosting.pkl'
+
+# Scores
+CROSS_VAL_SCORES_FILE='../data/cross_val_scores.pkl'
