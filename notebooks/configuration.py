@@ -1,5 +1,10 @@
 '''Globals for notebooks and modules.'''
 
+
+##################################################################################
+# Files and paths
+##################################################################################
+
 # Data
 RAW_DATA_FILE='../data/raw/dataset.parquet'
 DATA_FILE='../data/processed/dataset.pkl'
@@ -16,3 +21,16 @@ GRADIENT_BOOSTING_MODEL='../models/gradient_boosting.pkl'
 
 # Scores
 CROSS_VAL_SCORES_FILE='../data/cross_val_scores.pkl'
+
+##################################################################################
+# Constants for model training and evaluation
+##################################################################################
+
+# Class weight for models that accept it
+CLASS_WEIGHT = 'balanced'
+
+# Cross-validation folds for scoring
+CROSS_VAL_FOLDS = 5
+
+# Random search iterations
+RANDOM_SEARCH_ITERATIONS = 2000
