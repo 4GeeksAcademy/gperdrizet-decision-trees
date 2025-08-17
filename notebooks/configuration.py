@@ -11,6 +11,9 @@ RANDOM_SEED = 2271137437
 RAW_DATA_FILE = '../data/raw/dataset.parquet'
 DATA_FILE = '../data/processed/dataset.pkl'
 
+# File for list of imputed features
+IMPUTED_FEATURES_FILE = '../models/imputed_features.pkl'
+
 # Model hyperparameters
 DECISION_TREE_HYPERPARAMETERS = '../models/decision_tree_hyperparameters.pkl'
 RANDOM_FOREST_HYPERPARAMETERS = '../models/random_forest_hyperparameters.pkl'
@@ -36,4 +39,4 @@ CLASS_WEIGHT = 'balanced'
 CROSS_VAL_FOLDS = 3
 
 # Random search iterations for hyperparameter tuning
-RANDOM_SEARCH_ITERATIONS = 200
+RANDOM_SEARCH_ITERATIONS = 200000
