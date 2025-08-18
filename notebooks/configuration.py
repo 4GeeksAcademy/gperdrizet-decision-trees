@@ -24,6 +24,7 @@ LOGISTIC_REGRESSION_MODEL = '../models/logistic_regression.pkl'
 DECISION_TREE_MODEL = '../models/decision_tree.pkl'
 RANDOM_FOREST_MODEL = '../models/random_forest.pkl'
 GRADIENT_BOOSTING_MODEL = '../models/gradient_boosting.pkl'
+FINAL_MODEL = '../models/final_model.pkl'
 
 # Scores
 CROSS_VAL_SCORES_FILE = '../data/cross_val_scores.pkl'
@@ -33,10 +34,10 @@ CROSS_VAL_SCORES_FILE = '../data/cross_val_scores.pkl'
 ##################################################################################
 
 # Class weight for models that accept it
-CLASS_WEIGHT = 'balanced'
+CLASS_WEIGHT = 'non'
 
 # Cross-validation folds for scoring
 CROSS_VAL_FOLDS = 3
 
 # Random search iterations for hyperparameter tuning
-RANDOM_SEARCH_ITERATIONS = 200000
+RANDOM_SEARCH_ITERATIONS = 20000
