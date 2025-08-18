@@ -1,5 +1,7 @@
 '''Globals for notebooks and modules.'''
 
+from sklearn.model_selection import StratifiedShuffleSplit
+
 # WINNER - seed: 2271137437, linear = 74.19, tree = 78.65, delta = 4.46
 RANDOM_SEED = 2271137437
 
@@ -34,10 +36,17 @@ CROSS_VAL_SCORES_FILE = '../data/cross_val_scores.pkl'
 ##################################################################################
 
 # Class weight for models that accept it
-CLASS_WEIGHT = 'non'
+CLASS_WEIGHT = 'balanced'
 
-# Cross-validation folds for scoring
-CROSS_VAL_FOLDS = 3
+# Cross validation strategy
+CV_FOLDS = 10
+CV_SPLIT = 0.5
+
+CROSS_VAL = StratifiedShuffleSplit(
+        n_splits=CV_FOLDS,
+        test_size=CV_SPLIT,
+        random_state=RANDOM_SEED
+    )
 
 # Random search iterations for hyperparameter tuning
-RANDOM_SEARCH_ITERATIONS = 20000
+RANDOM_SEARCH_ITERATIONS = 40000
